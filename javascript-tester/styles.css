@@ -1,0 +1,123 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+
+    background: linear-gradient(0deg, rgb(83, 87, 92) 0%, rgba(0, 0, 0, 0) 20%);
+    height: 90vh;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 3.5em;
+}
+
+.center {
+    text-align: center;
+}
+
+.controller-status {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#controller-connected-area {
+    color: green;
+    display: none;
+}
+
+#controller-id {
+    color: red;
+}
+
+#controller-not-connected-area {
+    color: red;
+}
+
+#buttons {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(min-content, max-content));
+    grid-gap: 25px;
+    justify-content: center;
+    justify-items: start;
+}
+
+
+.button {
+    background-color: rgb(223, 222, 222);
+    height: 50px;
+    min-width: 50px;
+    display: flex;
+}
+
+.button-text-area {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button-name {
+    color: gray;
+    font-weight: bold
+}
+
+.button-value {
+    color: black;
+}
+
+.selected-button {
+    fill: red;
+}
+
+.axis-name {
+    color: gray;
+    font-weight: bold;
+}
+
+.axis-value {
+    color: blue;
+}
+
+
+
+/* DEFINE OF LOADING IMAGE STYLE */
+.loader {
+    display: inline-block;
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid red;
+    width: 20px;
+    height: 20px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
